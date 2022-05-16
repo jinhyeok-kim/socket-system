@@ -16,6 +16,7 @@ const server = net.createServer((socket) => {
 
 server.listen(process.env.PORT , (socket) => {
   console.log('opened server on', server.address());
+  console.log(process.env.PORT);
 });
 
 server.on('connection', (stream) => {

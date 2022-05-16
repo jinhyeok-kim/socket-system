@@ -1,6 +1,6 @@
 const net = require('net');
 
-const client = net.createConnection({ port: 7777 }, () => {
+const client = net.createConnection({ port: 443, host: 'quakka-echosystem.herokuapp.com' }, () => {
   // 'connect' listener.
   console.log('connected to server!');
   client.write('Hello!!!!!\r\n');
