@@ -14,7 +14,7 @@ const server = net.createServer((socket) => {
   throw err;
 });
 
-server.listen(7777, (socket) => {
+server.listen(process.env.PORT , (socket) => {
   console.log('opened server on', server.address());
 });
 
